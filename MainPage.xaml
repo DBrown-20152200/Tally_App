@@ -6,9 +6,14 @@
     <ScrollView>
         <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
 
-            <Editor/>
+            <Editor x:Name="TallyDisplay" 
+                    IsReadOnly="True" 
+                    HorizontalTextAlignment="End"
+                    HeightRequest="200"/>
 
-            <Grid ColumnSpacing="10" RowSpacing="10" Margin="10">
+            <Label x:Name="TotalDisplay" HorizontalOptions="End" Margin="10"/>
+
+            <Grid ColumnSpacing="10" RowSpacing="10">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
