@@ -9,7 +9,8 @@
             <Editor x:Name="TallyDisplay" 
                     IsReadOnly="True" 
                     HorizontalTextAlignment="End"
-                    HeightRequest="200"/>
+                    HeightRequest="200"
+                    Text=""/>
 
             <Label x:Name="TotalDisplay" HorizontalOptions="End" Margin="10"/>
 
