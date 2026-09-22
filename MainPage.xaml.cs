@@ -23,7 +23,8 @@
             //Adds number to tally
             else if (button.Text == "+")
             {
-                if(TallyDisplay.Text.EndsWith("+") == false)
+                if(TallyDisplay.Text.EndsWith("+") == false && 
+                    String.IsNullOrWhiteSpace(TallyDisplay.Text) == false)
                 {
                     TallyDisplay.Text += "\r";
                     TallyDisplay.Text += button.Text;

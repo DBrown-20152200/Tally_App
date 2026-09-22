@@ -4,27 +4,32 @@
              x:Class="Tally_App.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <VerticalStackLayout HorizontalOptions="Center" 
+                             VerticalOptions="Center" 
+                             MaximumWidthRequest="750"
+                             MinimumWidthRequest="275"
+                             MaximumHeightRequest="800"
+                             MinimumHeightRequest="300">
 
             <Editor x:Name="TallyDisplay" 
                     IsReadOnly="True" 
                     HorizontalTextAlignment="End"
-                    HeightRequest="200"
+                    MaximumHeightRequest="200"
                     Text=""/>
 
-            <Label x:Name="TotalDisplay" HorizontalOptions="End" Margin="10"/>
+            <Label x:Name="TotalDisplay" HorizontalOptions="End" Margin="10" Text="Total: 0"/>
 
-            <Grid ColumnSpacing="10" RowSpacing="10">
+            <Grid ColumnSpacing="10" RowSpacing="10" >
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="25*"/>
+                    <RowDefinition Height="25*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="33*"/>
+                    <ColumnDefinition Width="33*"/>
+                    <ColumnDefinition Width="33*"/>
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="ButtonSeven" Grid.Row="0" Grid.Column="0" Text="7" Clicked="Button_Clicked"/>
