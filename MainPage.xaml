@@ -4,22 +4,36 @@
              x:Class="Tally_App.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout HorizontalOptions="Center" 
-                             VerticalOptions="Center" 
-                             MaximumWidthRequest="750"
-                             MinimumWidthRequest="275"
-                             MaximumHeightRequest="800"
-                             MinimumHeightRequest="300">
+        <Grid RowSpacing="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="45*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="20*"/>
+                <ColumnDefinition Width="60*"/>
+                <ColumnDefinition Width="20*"/>
+            </Grid.ColumnDefinitions>
 
-            <Editor x:Name="TallyDisplay" 
-                    IsReadOnly="True" 
-                    HorizontalTextAlignment="End"
-                    MaximumHeightRequest="200"
-                    Text=""/>
+            <Border Stroke="Black"
+                    Grid.Row="0"
+                    Grid.Column="1">
+                <Editor x:Name="TallyDisplay" 
+                        IsReadOnly="True" 
+                        HorizontalTextAlignment="End"
+                        Text=""/>
+            </Border>
 
-            <Label x:Name="TotalDisplay" HorizontalOptions="End" Margin="10" Text="Total: 0"/>
+            <Label x:Name="TotalDisplay" 
+                   HorizontalOptions="End" 
+                   Margin="10" 
+                   Text="Total: 0" 
+                   Grid.Row="1"
+                   Grid.Column="1"/>
 
-            <Grid ColumnSpacing="10" RowSpacing="10" >
+            <Grid ColumnSpacing="5" RowSpacing="5" Grid.Row="2" Grid.Column="1">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="25*"/>
                     <RowDefinition Height="25*"/>
@@ -47,9 +61,8 @@
                 <Button x:Name="ButtonZero" Grid.Row="3" Grid.Column="0" Text="0" Clicked="Button_Clicked"/>
                 <Button x:Name="ButtonAdd" Grid.Row="3" Grid.Column="1" Text="+" Clicked="Button_Clicked"/>
                 <Button x:Name="ButtonClear" Grid.Row="3" Grid.Column="2" Text="C" Clicked="Button_Clicked"/>
-                
-            </Grid>
-        </VerticalStackLayout>
-    </ScrollView>
 
+            </Grid>
+        </Grid>
+    </ScrollView>
 </ContentPage>
