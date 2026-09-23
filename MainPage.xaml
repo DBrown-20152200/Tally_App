@@ -23,7 +23,8 @@
                 <Editor x:Name="TallyDisplay" 
                         IsReadOnly="True" 
                         HorizontalTextAlignment="End"
-                        Text=""/>
+                        Text=""
+                        FontSize="20"/>
             </Border>
 
             <Label x:Name="TotalDisplay" 
@@ -31,7 +32,8 @@
                    Margin="10" 
                    Text="Total: 0" 
                    Grid.Row="1"
-                   Grid.Column="1"/>
+                   Grid.Column="1"
+                   FontSize="20"/>
 
             <Grid ColumnSpacing="5" RowSpacing="5" Grid.Row="2" Grid.Column="1">
                 <Grid.RowDefinitions>
@@ -46,21 +48,21 @@
                     <ColumnDefinition Width="33*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="ButtonSeven" Grid.Row="0" Grid.Column="0" Text="7" Clicked="Button_Clicked"/>
-                <Button x:Name="ButtonEight" Grid.Row="0" Grid.Column="1" Text="8" Clicked="Button_Clicked"/>
-                <Button x:Name="ButtonNine" Grid.Row="0" Grid.Column="2" Text="9" Clicked="Button_Clicked"/>
+                <Button x:Name="ButtonSeven" Grid.Row="0" Grid.Column="0" Text="7" Clicked="Button_Clicked" FontSize="20"/>
+                <Button x:Name="ButtonEight" Grid.Row="0" Grid.Column="1" Text="8" Clicked="Button_Clicked" FontSize="20"/>
+                <Button x:Name="ButtonNine" Grid.Row="0" Grid.Column="2" Text="9" Clicked="Button_Clicked" FontSize="20"/>
 
-                <Button x:Name="ButtonFour" Grid.Row="1" Grid.Column="0" Text="4" Clicked="Button_Clicked"/>
-                <Button x:Name="ButtonFive" Grid.Row="1" Grid.Column="1" Text="5" Clicked="Button_Clicked"/>
-                <Button x:Name="ButtonSix" Grid.Row="1" Grid.Column="2" Text="6" Clicked="Button_Clicked"/>
+                <Button x:Name="ButtonFour" Grid.Row="1" Grid.Column="0" Text="4" Clicked="Button_Clicked" FontSize="20"/>
+                <Button x:Name="ButtonFive" Grid.Row="1" Grid.Column="1" Text="5" Clicked="Button_Clicked" FontSize="20"/>
+                <Button x:Name="ButtonSix" Grid.Row="1" Grid.Column="2" Text="6" Clicked="Button_Clicked" FontSize="20"/>
 
-                <Button x:Name="ButtonOne" Grid.Row="2" Grid.Column="0" Text="1" Clicked="Button_Clicked"/>
-                <Button x:Name="ButtonTwo" Grid.Row="2" Grid.Column="1" Text="2" Clicked="Button_Clicked"/>
-                <Button x:Name="ButtonThree" Grid.Row="2" Grid.Column="2" Text="3" Clicked="Button_Clicked"/>
+                <Button x:Name="ButtonOne" Grid.Row="2" Grid.Column="0" Text="1" Clicked="Button_Clicked" FontSize="20"/>
+                <Button x:Name="ButtonTwo" Grid.Row="2" Grid.Column="1" Text="2" Clicked="Button_Clicked" FontSize="20"/>
+                <Button x:Name="ButtonThree" Grid.Row="2" Grid.Column="2" Text="3" Clicked="Button_Clicked" FontSize="20"/>
 
-                <Button x:Name="ButtonZero" Grid.Row="3" Grid.Column="0" Text="0" Clicked="Button_Clicked"/>
-                <Button x:Name="ButtonAdd" Grid.Row="3" Grid.Column="1" Text="+" Clicked="Button_Clicked"/>
-                <Button x:Name="ButtonClear" Grid.Row="3" Grid.Column="2" Text="C" Clicked="Button_Clicked"/>
+                <Button x:Name="ButtonZero" Grid.Row="3" Grid.Column="0" Text="0" Clicked="Button_Clicked" FontSize="20"/>
+                <Button x:Name="ButtonAdd" Grid.Row="3" Grid.Column="1" Text="+" Clicked="Button_Clicked" FontSize="20"/>
+                <Button x:Name="ButtonClear" Grid.Row="3" Grid.Column="2" Text="C" Clicked="Button_Clicked" FontSize="20"/>
 
             </Grid>
         </Grid>
